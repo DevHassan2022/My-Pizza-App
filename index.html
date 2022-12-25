@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Jimmy's Diner</h1>
+                <h3>The best burgers and pizzas in town.</h3>
+            </header>
+            <main>
+                <div id="render-menu" class="render-menu">
+                    <!-- Restaurant Menu Rendered With JS -->
+                </div>
+                
+                <div id="checkout-container" class="checkout-container">
+                    <h2 class="checkout-title">Your Order</h2>
+                    <div id="order-list" class="order-list">
+                        <!-- Ordered Items Here -->
+                    </div>
+                    <div class="divider-line"></div>
+                    <div id="total" class="total">
+                        <h2>Total Price</h2>
+                        <h4 id="total-price"></h4>
+                    </div>
+                        
+                        <button id="complete-order-btn" class="complete-order-btn">
+                            Complete Order
+                        </button>
+                </div>
+                
+                <!-- Payment Modal -->
+                <form id="payment-modal" class="payment-modal">
+                    <h2 class="payment-title">Enter Card Details</h2>
+                    <input  id ="name" class="input-box name-input" maxlength=7 type="text" placeholder="Enter your name" aria-label="Enter your name" required>
+                    <input class="input-box" type="number" maxlength=16 placeholder="Enter card number" aria-label="Enter card number" required>
+                    <input  class= "input-box" type="password" maxlength =3 placeholder="Enter CVV" aria-label="Enter CVV" required>
+                    <button type="submit" id="pay-btn" class="pay-btn">Pay</button>
+                </form>
+                
+                 <!-- thank you for your order note -->
+                <div class="thank-you-note" id="final-message">
+                    
+                </div>
+                
+            </main>
+        </div>    
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
